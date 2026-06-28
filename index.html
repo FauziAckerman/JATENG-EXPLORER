@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Portal Budaya Jawa Tengah – Mengenal, Melestarikan, dan Mengedukasi Keberagaman Budaya Indonesia">
+<meta name="keywords" content="budaya indonesia, nusantara, batik, wayang, kebudayaan, tradisi, wisata budaya">
+<title>Portal Budaya Jawa Tengah | Warisan Budaya Jawa Tengah, Kebanggaan Bangsa</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<!-- LOADER -->
+<div id="loader">
+  <div class="loader-mandala"></div>
+  <p class="loader-text">Menjelajah Jawa Tengah</p>
+</div>
+
+<!-- BACK TO TOP -->
+<button id="btt" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Kembali ke atas">↑</button>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <button class="mobile-close" id="mobileClose">✕</button>
+  <a href="#budaya">Budaya</a>
+  <a href="#peta">Peta Nusantara</a>
+  <a href="#kalender">Kalender</a>
+  <a href="#galeri">Galeri</a>
+  <a href="#program">Tips</a>
+</div>
+
+<!-- NAV -->
+<nav id="navbar">
+  <div class="nav-inner">
+    <a href="#hero" class="nav-logo">
+      <div class="nav-logo-icon">🏛️</div>
+      Jateng Explorer
+    </a>
+    <ul class="nav-links">
+      <li><a href="#budaya">Budaya</a></li>
+      <li><a href="#peta">Peta</a></li>
+      <li><a href="#kalender">Kalender</a></li>
+      <li><a href="#galeri">Galeri</a></li>
+      <li><a href="#program">Program</a></li>
+    </ul>
+    <div class="hamburger" id="hamburger">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</nav>
+
+<!-- ══ HERO ══ -->
+<section id="hero">
+  <!-- Batik floating ornaments -->
+  <div class="batik-bg">
+    <div class="batik-float" style="top:10%;left:5%;width:300px;">
+      <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g stroke="#D4AF37" stroke-width="0.8" opacity="0.8">
+          <circle cx="100" cy="100" r="90"/><circle cx="100" cy="100" r="70"/>
+          <circle cx="100" cy="100" r="50"/><circle cx="100" cy="100" r="30"/>
+          <line x1="10" y1="100" x2="190" y2="100"/><line x1="100" y1="10" x2="100" y2="190"/>
+          <line x1="36" y1="36" x2="164" y2="164"/><line x1="164" y1="36" x2="36" y2="164"/>
+          <polygon points="100,15 119,68 175,68 130,103 145,160 100,128 55,160 70,103 25,68 81,68" fill="rgba(212,175,55,0.05)"/>
+        </g>
+      </svg>
+    </div>
+    <div class="batik-float" style="top:50%;right:3%;width:250px;">
+      <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g stroke="#D4AF37" stroke-width="0.8" opacity="0.8">
+          <rect x="20" y="20" width="160" height="160" rx="4"/>
+          <rect x="40" y="40" width="120" height="120" rx="4" transform="rotate(15,100,100)"/>
+          <rect x="60" y="60" width="80" height="80" rx="4" transform="rotate(30,100,100)"/>
+          <circle cx="100" cy="100" r="15"/>
+          <circle cx="100" cy="40" r="8"/><circle cx="100" cy="160" r="8"/>
+          <circle cx="40" cy="100" r="8"/><circle cx="160" cy="100" r="8"/>
+        </g>
+      </svg>
+    </div>
+    <div class="batik-float" style="bottom:15%;left:15%;width:180px;">
+      <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g stroke="#D4AF37" stroke-width="1" opacity="0.8">
+          <path d="M100 20 Q130 60 100 100 Q70 60 100 20Z"/>
+          <path d="M100 180 Q130 140 100 100 Q70 140 100 180Z"/>
+          <path d="M20 100 Q60 130 100 100 Q60 70 20 100Z"/>
+          <path d="M180 100 Q140 130 100 100 Q140 70 180 100Z"/>
+          <circle cx="100" cy="100" r="20"/>
+          <circle cx="100" cy="100" r="10"/>
+        </g>
+      </svg>
+    </div>
+  </div>
+
+  <div class="hero-content">
+    <div class="hero-eyebrow">Warisan Budaya Jawa Tengah</div>
+    <h1 class="hero-title">Portal Budaya<br><span>Jawa Tengah</span></h1>
+    <p class="hero-subtitle">Menjelajahi Kekayaan Budaya Jawa Tengah</p>
+    <p class="hero-desc">Mengenal, melestarikan, dan memperkenalkan kekayaan budaya Jawa Tengah melalui seni, tradisi, kuliner, bahasa, serta warisan leluhur yang masih hidup hingga saat ini.</p>
+    <div class="hero-buttons">
+      <a href="#budaya" class="btn-primary">Jelajahi Budaya</a>
+      <a href="#program" class="btn-outline">Tips Budaya</a>
+    </div>
+  </div>
+
+  <div class="hero-scroll-indicator">
+    <span>Gulir</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- ══ STATS ══ -->
+<section id="stats">
+  <div class="stats-grid">
+    <div class="stat-item">
+      <div class="stat-num" data-target="17504">0</div>
+      <div class="stat-label">Pulau di Nusantara</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-num" data-target="1340">0</div>
+      <div class="stat-label">Suku Bangsa</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-num" data-target="718">0</div>
+      <div class="stat-label">Bahasa Daerah</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-num" data-target="5">0</div>
+      <div class="stat-label">Warisan UNESCO</div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ FILOSOFI ══ -->
+<section id="filosofi">
+  <div class="filosofi-grid">
+    <div class="filosofi-visual">
+      <div class="filosofi-mandala">
+        <div class="filosofi-mandala-inner">
+          <div class="filosofi-mandala-core">🌺</div>
+        </div>
+      </div>
+      <div class="filosofi-badge">
+        <span class="filosofi-badge-num">±3000</span>
+        <span class="filosofi-badge-text">Tahun Tradisi</span>
+      </div>
+    </div>
+    <div class="filosofi-text">
+      <div class="section-tag">Tentang Kami</div>
+      <h2 class="section-title">Merangkul <span>Keberagaman</span><br>sebagai Kekuatan</h2>
+      <div class="divider" style="justify-content:flex-start;margin-left:0;">
+        <div class="divider-line"></div>
+        <div class="divider-gem"></div>
+        <div class="divider-line r"></div>
+      </div>
+      <p class="filosofi-para">Portal Budaya Nusantara hadir sebagai jembatan antara generasi penerus dengan kekayaan warisan leluhur yang tak ternilai. Kami percaya bahwa identitas bangsa yang kuat dibangun di atas pondasi pemahaman dan kebanggaan terhadap akar budaya sendiri.</p>
+      <p class="filosofi-para">Bhinneka Tunggal Ika bukan sekadar semboyan — ia adalah cara hidup yang telah diwariskan selama ribuan tahun, menjadikan Indonesia sebagai negara dengan keberagaman budaya paling kaya di dunia.</p>
+      <div class="filosofi-values">
+        <div class="value-chip">
+          <span class="value-chip-icon">🎭</span>
+          <span class="value-chip-label">Seni & Pertunjukan</span>
+        </div>
+        <div class="value-chip">
+          <span class="value-chip-icon">🏺</span>
+          <span class="value-chip-label">Artefak Tradisi</span>
+        </div>
+        <div class="value-chip">
+          <span class="value-chip-icon">🌿</span>
+          <span class="value-chip-label">Kearifan Lokal</span>
+        </div>
+        <div class="value-chip">
+          <span class="value-chip-icon">📜</span>
+          <span class="value-chip-label">Sastra Nusantara</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ BUDAYA ══ -->
+<section id="budaya">
+  <div class="section-inner">
+    <div class="section-header reveal">
+      <div class="section-tag">Eksplorasi Budaya</div>
+      <h2 class="section-title">Kekayaan <span>Warisan</span> Bangsa</h2>
+      <div class="divider"><div class="divider-line"></div><div class="divider-gem"></div><div class="divider-line r"></div></div>
+      <p class="section-lead">Dari seni pertunjukan hingga kerajinan tangan, setiap budaya menyimpan cerita yang layak dikenang.</p>
+    </div>
+    <div class="budaya-grid">
+
+      <div class="budaya-card card-wayang">
+        <div class="budaya-card-bg">
+        <img src="image/wayangkulitsurakarta.jpg" alt="Wayang Kulit Surakarta">
+      </div>
+      <div class="budaya-card-overlay"></div>
+      <div class="budaya-card-content">
+          <span class="budaya-card-tag">Seni Pertunjukan · Jawa</span>
+          <h3 class="budaya-card-title">Wayang Kulit Surakarta</h3>
+          <p class="budaya-card-desc">Seni bayangan tertua di dunia, mengisahkan Mahabharata & Ramayana selama semalam suntuk. Diakui UNESCO sebagai Warisan Budaya Tak Benda.</p>
+          <a href="#" class="budaya-card-link">Selengkapnya →</a>
+        </div>
+      </div>
+
+      <div class="budaya-card card-batik">
+        <div class="budaya-card-bg"></div>
+        <div class="card-pattern">🎨</div>
+        <div class="budaya-card-overlay"></div>
+        <div class="budaya-card-content">
+          <span class="budaya-card-tag">Kerajinan · Seluruh Indonesia</span>
+          <h3 class="budaya-card-title">Batik Solo & Pekalongan</h3>
+          <p class="budaya-card-desc">Seni melukis di atas kain dengan canting dan malam, menghasilkan ribuan motif yang masing-masing mengandung filosofi mendalam.</p>
+          <a href="#" class="budaya-card-link">Selengkapnya →</a>
+        </div>
+      </div>
+
+      <div class="budaya-card card-gamelan">
+        <div class="budaya-card-bg"><img src="image/gamelanjawa.jpg" alt="Gamelan Jawa"></div>
+        <div class="budaya-card-overlay"></div>
+        <div class="budaya-card-content">
+          <span class="budaya-card-tag">Musik Tradisional · Bali & Jawa</span>
+          <h3 class="budaya-card-title">Gamelan Jawa</h3>
+          <p class="budaya-card-desc">Orkestra perkusi yang harmonis, memadukan gong, kenong, saron, dan rebab dalam irama yang menghipnotis jiwa dan raga.</p>
+          <a href="#" class="budaya-card-link">Selengkapnya →</a>
+        </div>
+      </div>
+
+      <div class="budaya-card card-tari">
+        <div class="budaya-card-bg"></div>
+        <div class="card-pattern"></div>
+        <div class="budaya-card-overlay"></div>
+        <div class="budaya-card-content">
+          <span class="budaya-card-tag">Tari Tradisional · Berbagai Daerah</span>
+          <h3 class="budaya-card-title">Tari Gambyong</h3>
+          <p class="budaya-card-desc">Dari Tari Kecak Bali hingga Tari Saman Aceh, setiap gerakan adalah bahasa tubuh yang menuturkan sejarah dan spiritualitas.</p>
+          <a href="#" class="budaya-card-link">Selengkapnya →</a>
+        </div>
+      </div>
+
+      <div class="budaya-card card-tenun">
+        <div class="budaya-card-bg"></div>
+        <div class="card-pattern">🧵</div>
+        <div class="budaya-card-overlay"></div>
+        <div class="budaya-card-content">
+          <span class="budaya-card-tag">Tekstil Tradisional · NTT & Lombok</span>
+          <h3 class="budaya-card-title">Keris Jawa</h3>
+          <p class="budaya-card-desc">Kain tenun dengan motif geometris sakral yang dikerjakan berbulan-bulan — setiap helai benang adalah doa yang dipanjatkan.</p>
+          <a href="#" class="budaya-card-link">Selengkapnya →</a>
+        </div>
+      </div>
+
+      <div class="budaya-card card-kuliner">
+        <div class="budaya-card-bg"></div>
+        <div class="card-pattern">🍜</div>
+        <div class="budaya-card-overlay"></div>
+        <div class="budaya-card-content">
+          <span class="budaya-card-tag">Kuliner Warisan · Nasional</span>
+          <h3 class="budaya-card-title">Kuliner Nusantara</h3>
+          <p class="budaya-card-desc">Gudeg, Lumpia, Soto Kudus, Getuk.</p>
+          <a href="#" class="budaya-card-link">Selengkapnya →</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══ PETA ══ -->
+<section id="peta">
+  <div class="section-inner">
+    <div class="section-header reveal">
+      <div class="section-tag">Jelajahi</div>
+      <h2 class="section-title">Peta <span>Nusantara</span></h2>
+      <div class="divider"><div class="divider-line"></div><div class="divider-gem"></div><div class="divider-line r"></div></div>
+      <p class="section-lead">Dari Aceh hingga Papua, setiap pulau menyimpan khazanah budaya yang tak ada habisnya.</p>
+    </div>
+    <div class="peta-container">
+      <div class="peta-map reveal">
+        <div class="peta-map-inner">🗺️</div>
+        <p style="text-align:center;font-family:'Playfair Display',serif;font-style:italic;color:var(--coklat-muda);margin-top:1rem;font-size:0.9rem;">17.504 Pulau · 5 Kepulauan Besar</p>
+        <div class="peta-islands">
+          <span class="island-chip active" onclick="activateIsland(this,'Sumatera','Tanah Adat Batak, Minang, Melayu')">Sumatera</span>
+          <span class="island-chip" onclick="activateIsland(this,'Jawa','Pusat Kebudayaan Jawa, Sunda, dan Betawi')">Jawa</span>
+          <span class="island-chip" onclick="activateIsland(this,'Kalimantan','Rumah Dayak dan kekayaan hutan tropis')">Kalimantan</span>
+          <span class="island-chip" onclick="activateIsland(this,'Sulawesi','Toraja, Bugis, dan tradisi maritim')">Sulawesi</span>
+          <span class="island-chip" onclick="activateIsland(this,'Bali & Nusa Tenggara','Hinduisme, tenun, dan tari sakral')">Bali & NTB/NTT</span>
+          <span class="island-chip" onclick="activateIsland(this,'Maluku','Rempah dunia dan nyanyian Cakalele')">Maluku</span>
+          <span class="island-chip" onclick="activateIsland(this,'Papua','Koteka, Asmat, dan seni ukir primitif')">Papua</span>
+        </div>
+      </div>
+      <div class="peta-info reveal" style="transition-delay:0.2s">
+        <div class="section-tag">Info Wilayah</div>
+        <div class="peta-info-title" id="petaTitle">Sumatera</div>
+        <div class="peta-info-sub" id="petaSub">Tanah Adat Batak, Minang, Melayu</div>
+        <ul class="peta-facts">
+          <li>Rumah adat Gadang Minangkabau dengan atap tanduk khas</li>
+          <li>Tari Piring dan Tari Indang dari Sumatera Barat</li>
+          <li>Kain songket berbenang emas warisan melayu</li>
+          <li>Tradisi matrilineal Minangkabau, unik di dunia</li>
+          <li>Danau Toba, danau vulkanik terbesar di Asia</li>
+        </ul>
+        <a href="#" class="btn-primary" style="margin-top:1.5rem;display:inline-block;font-size:0.78rem;padding:0.75rem 1.5rem;">Eksplorasi Lengkap →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ KALENDER ══ -->
+<section id="kalender">
+  <div class="section-inner">
+    <div class="section-header reveal">
+      <div class="section-tag">Agenda 2025</div>
+      <h2 class="section-title">Kalender <span>Budaya</span></h2>
+      <div class="divider"><div class="divider-line"></div><div class="divider-gem"></div><div class="divider-line r"></div></div>
+      <p class="section-lead">Jangan lewatkan perayaan budaya terbaik dari seluruh penjuru Nusantara.</p>
+    </div>
+    <div class="kalender-list">
+      <div class="kalender-item">
+        <div class="kalender-date"><span class="kalender-date-month">Agu</span><span class="kalender-date-day">17</span></div>
+        <div class="kalender-info"><div class="kalender-info-name">Festival Budaya HUT RI ke-80</div><div class="kalender-info-loc">🏛️ Jakarta & Nusantara</div></div>
+        <span class="kalender-badge badge-festival">Festival</span>
+      </div>
+      <div class="kalender-item">
+        <div class="kalender-date"><span class="kalender-date-month">Sep</span><span class="kalender-date-day">12</span></div>
+        <div class="kalender-info"><div class="kalender-info-name">Festival Wayang Internasional</div><div class="kalender-info-loc">🎭 Solo, Jawa Tengah</div></div>
+        <span class="kalender-badge badge-seni">Seni</span>
+      </div>
+      <div class="kalender-item">
+        <div class="kalender-date"><span class="kalender-date-month">Okt</span><span class="kalender-date-day">2</span></div>
+        <div class="kalender-info"><div class="kalender-info-name">Hari Batik Nasional</div><div class="kalender-info-loc">👘 Seluruh Indonesia</div></div>
+        <span class="kalender-badge badge-adat">Adat</span>
+      </div>
+      <div class="kalender-item">
+        <div class="kalender-date"><span class="kalender-date-month">Nov</span><span class="kalender-date-day">8</span></div>
+        <div class="kalender-info"><div class="kalender-info-name">Pesta Kesenian Bali (PKB)</div><div class="kalender-info-loc">🌺 Denpasar, Bali</div></div>
+        <span class="kalender-badge badge-festival">Festival</span>
+      </div>
+      <div class="kalender-item">
+        <div class="kalender-date"><span class="kalender-date-month">Des</span><span class="kalender-date-day">19</span></div>
+        <div class="kalender-info"><div class="kalender-info-name">Festival Danau Sentani</div><div class="kalender-info-loc">🦅 Jayapura, Papua</div></div>
+        <span class="kalender-badge badge-seni">Seni</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ KUTIPAN ══ -->
+<section id="kutipan">
+  <div class="batik-bg">
+    <div class="batik-float" style="top:-10%;right:-5%;width:350px;opacity:0.08">
+      <svg viewBox="0 0 300 300" fill="none"><g stroke="#D4AF37" stroke-width="0.8"><circle cx="150" cy="150" r="140"/><circle cx="150" cy="150" r="110"/><circle cx="150" cy="150" r="80"/><circle cx="150" cy="150" r="50"/><circle cx="150" cy="150" r="20"/><line x1="10" y1="150" x2="290" y2="150"/><line x1="150" y1="10" x2="150" y2="290"/><line x1="51" y1="51" x2="249" y2="249"/><line x1="249" y1="51" x2="51" y2="249"/></g></svg>
+    </div>
+  </div>
+  <div class="kutipan-content">
+    <span class="kutipan-mark">"</span>
+    <p class="kutipan-text" id="kutipanText">Kebudayaan adalah jiwa sebuah bangsa. Jika jiwa itu hilang, hilang pulalah bangsa itu dari muka bumi.</p>
+    <p class="kutipan-source" id="kutipanSource">— Bung Karno, Presiden Pertama RI</p>
+    <div class="kutipan-dots">
+      <div class="kutipan-dot active" onclick="changeKutipan(0)"></div>
+      <div class="kutipan-dot" onclick="changeKutipan(1)"></div>
+      <div class="kutipan-dot" onclick="changeKutipan(2)"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ GALERI ══ -->
+<section id="galeri">
+  <div class="section-inner">
+    <div class="section-header reveal">
+      <div class="section-tag">Dokumentasi Visual</div>
+      <h2 class="section-title">Galeri <span>Nusantara</span></h2>
+      <div class="divider"><div class="divider-line"></div><div class="divider-gem"></div><div class="divider-line r"></div></div>
+    </div>
+    <div class="galeri-masonry">
+      <div class="galeri-item" style="--ratio:1/1.4;--clr:linear-gradient(135deg,#3E2723,#6D4C41)">
+        <div class="galeri-item-inner"><span>🎭</span></div>
+        <div class="galeri-item-overlay"><span class="galeri-item-overlay-text">Wayang Orang</span></div>
+      </div>
+      <div class="galeri-item" style="--ratio:1/0.8;--clr:linear-gradient(135deg,#1A4A6B,#2E5339)">
+        <div class="galeri-item-inner"><span>🌺</span></div>
+        <div class="galeri-item-overlay"><span class="galeri-item-overlay-text">Tari Pendet</span></div>
+      </div>
+      <div class="galeri-item" style="--ratio:1/1.2;--clr:linear-gradient(135deg,#2E5339,#1A3A5C)">
+        <div class="galeri-item-inner"><span>🏛️</span></div>
+        <div class="galeri-item-overlay"><span class="galeri-item-overlay-text">Candi Borobudur</span></div>
+      </div>
+      <div class="galeri-item" style="--ratio:1/1;--clr:linear-gradient(135deg,#6D4C41,#2E1503)">
+        <div class="galeri-item-inner"><span>🎨</span></div>
+        <div class="galeri-item-overlay"><span class="galeri-item-overlay-text">Batik Mega Mendung</span></div>
+      </div>
+      <div class="galeri-item" style="--ratio:1/1.5;--clr:linear-gradient(135deg,#1A4A6B,#6D4C41)">
+        <div class="galeri-item-inner"><span>🥁</span></div>
+        <div class="galeri-item-overlay"><span class="galeri-item-overlay-text">Gamelan Bali</span></div>
+      </div>
+      <div class="galeri-item" style="--ratio:1/0.9;--clr:linear-gradient(135deg,#3E2723,#2E5339)">
+        <div class="galeri-item-inner"><span>🧵</span></div>
+        <div class="galeri-item-overlay"><span class="galeri-item-overlay-text">Tenun NTT</span></div>
+      </div>
+      <div class="galeri-item" style="--ratio:1/1.1;--clr:linear-gradient(135deg,#2E5339,#6D4C41)">
+        <div class="galeri-item-inner"><span>🦅</span></div>
+        <div class="galeri-item-overlay"><span class="galeri-item-overlay-text">Honai Papua</span></div>
+      </div>
+      <div class="galeri-item" style="--ratio:1/0.75;--clr:linear-gradient(135deg,#1A3A5C,#3E2723)">
+        <div class="galeri-item-inner"><span>🍜</span></div>
+        <div class="galeri-item-overlay"><span class="galeri-item-overlay-text">Kuliner Nusantara</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ PROGRAM ══ -->
+<section id="program">
+  <div class="section-inner">
+    <div class="section-header reveal">
+      <div class="section-tag">Inisiatif Kami</div>
+      <h2 class="section-title">Program <span>Pelestarian</span></h2>
+      <div class="divider"><div class="divider-line"></div><div class="divider-gem"></div><div class="divider-line r"></div></div>
+      <p class="section-lead">Bersama-sama menjaga nyala api kebudayaan untuk generasi yang akan datang.</p>
+    </div>
+    <div class="program-grid">
+      <div class="program-card">
+        <div class="program-icon">📚</div>
+        <h3 class="program-title">Arsip Digital Nusantara</h3>
+        <p class="program-desc">Mendokumentasikan dan mendigitalisasi ribuan artefak budaya, teks kuno, dan rekaman seni pertunjukan dalam format yang dapat diakses semua kalangan.</p>
+        <a href="#" class="program-link">Telusuri Arsip →</a>
+      </div>
+      <div class="program-card">
+        <div class="program-icon">🎓</div>
+        <h3 class="program-title">Beasiswa Seniman Muda</h3>
+        <p class="program-desc">Mendukung generasi penerus pengrajin batik, penari tradisional, dan dalang muda agar warisan tak putus di tangan mereka yang mencintainya.</p>
+        <a href="#" class="program-link">Daftar Beasiswa →</a>
+      </div>
+      <div class="program-card">
+        <div class="program-icon">🌐</div>
+        <h3 class="program-title">Festival Virtual Nusantara</h3>
+        <p class="program-desc">Platform streaming pertunjukan budaya live dari seluruh Indonesia, menjangkau diaspora Indonesia di 50+ negara tanpa batas jarak dan waktu.</p>
+        <a href="#" class="program-link">Tonton Festival →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ NEWSLETTER ══ -->
+<section id="newsletter">
+  <div class="newsletter-box reveal">
+    <div class="section-tag">Tetap Terhubung</div>
+    <h2 class="section-title" style="font-size:clamp(1.5rem,3vw,2.4rem);">Jadilah Bagian dari <span>Gerakan</span></h2>
+    <div class="divider"><div class="divider-line"></div><div class="divider-gem"></div><div class="divider-line r"></div></div>
+    <p class="section-lead" style="font-size:0.9rem;margin-top:0.5rem;">Dapatkan kabar terbaru tentang festival budaya, program beasiswa, dan konten edukasi eksklusif.</p>
+    <div class="newsletter-input-wrap">
+      <input type="email" class="newsletter-input" placeholder="alamat@email.anda" id="emailInput">
+      <button class="newsletter-btn" onclick="handleSubscribe()">Berlangganan</button>
+    </div>
+    <p class="newsletter-note" id="newsletterMsg">🔒 Kami menghormati privasi Anda. Tidak ada spam.</p>
+  </div>
+</section>
+
+<!-- ══ FOOTER ══ -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <span class="footer-logo"> Jateng Explorer </span>
+      <p class="footer-tagline">Merangkul keberagaman sebagai kekuatan, melestarikan tradisi sebagai identitas, dan menginspirasi masa depan dengan kearifan masa lalu.</p>
+      <div class="footer-socials">
+        <a href="#" class="social-btn" title="Instagram">📸</a>
+        <a href="#" class="social-btn" title="YouTube">📺</a>
+        <a href="#" class="social-btn" title="Facebook">👥</a>
+        <a href="#" class="social-btn" title="Twitter">🐦</a>
+      </div>
+    </div>
+    <div>
+      <div class="footer-col-title">Jelajahi</div>
+      <ul class="footer-links">
+        <li><a href="#budaya">Budaya Daerah</a></li>
+        <li><a href="#peta">Peta Nusantara</a></li>
+        <li><a href="#galeri">Galeri Foto</a></li>
+        <li><a href="#kalender">Kalender Budaya</a></li>
+        <li><a href="#">Artikel & Berita</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">Program</div>
+      <ul class="footer-links">
+        <li><a href="#">Arsip Digital</a></li>
+        <li><a href="#">Beasiswa Seni</a></li>
+        <li><a href="#">Festival Virtual</a></li>
+        <li><a href="#">Workshop Budaya</a></li>
+        <li><a href="#">Penelitian</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">Tentang</div>
+      <ul class="footer-links">
+        <li><a href="#">Misi & Visi</a></li>
+        <li><a href="#">Tim Kami</a></li>
+        <li><a href="#">Mitra & Sponsor</a></li>
+        <li><a href="#">Kontak</a></li>
+        <li><a href="#">Kebijakan Privasi</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom" style="max-width:1200px;margin:0 auto;">
+    <p class="footer-copy">© 2025 <span>Portal Budaya Jawa Tengah</span>. Dibuat dengan ❤️ untuk Indonesia.</p>
+    <p class="footer-copy">🇮🇩 Bhinneka Tunggal Ika</p>
+  </div>
+  <div class="footer-batik"></div>
+</footer>
+
+<script>
+// ── LOADER ──
+window.addEventListener('load', () => {
+  setTimeout(() => {
+    document.getElementById('loader').classList.add('hidden');
+  }, 1200);
+});
+
+// ── NAV SCROLL ──
+const navbar = document.getElementById('navbar');
+const btt = document.getElementById('btt');
+window.addEventListener('scroll', () => {
+  const sy = window.scrollY;
+  navbar.classList.toggle('scrolled', sy > 60);
+  btt.classList.toggle('visible', sy > 400);
+});
+
+// ── HAMBURGER ──
+document.getElementById('hamburger').onclick = () => document.getElementById('mobileMenu').classList.add('open');
+document.getElementById('mobileClose').onclick = () => document.getElementById('mobileMenu').classList.remove('open');
+document.querySelectorAll('.mobile-menu a').forEach(a => {
+  a.onclick = () => document.getElementById('mobileMenu').classList.remove('open');
+});
+
+// ── PARALLAX HERO ──
+window.addEventListener('scroll', () => {
+  const scrolled = window.scrollY;
+  const heroContent = document.querySelector('.hero-content');
+  if (heroContent && scrolled < window.innerHeight) {
+    heroContent.style.transform = `translateY(${scrolled * 0.3}px)`;
+    heroContent.style.opacity = 1 - scrolled / (window.innerHeight * 0.8);
+  }
+});
+
+// ── INTERSECTION OBSERVER ──
+const io = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      e.target.classList.add('visible');
+      // Staggered children
+      const children = e.target.querySelectorAll('.budaya-card, .kalender-item, .program-card, .galeri-item, .stat-item');
+      children.forEach((child, i) => {
+        setTimeout(() => child.classList.add('visible'), i * 80);
+      });
+    }
+  });
+}, { threshold: 0.1 });
+
+document.querySelectorAll('.reveal, .filosofi-visual, .filosofi-text, .peta-map, .peta-info, #budaya, #kalender .kalender-list, .program-grid, .galeri-masonry, #stats .stats-grid').forEach(el => io.observe(el));
+
+// ── STATS COUNTER ──
+const statsObs = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      e.target.querySelectorAll('.stat-num').forEach(el => {
+        const target = parseInt(el.dataset.target);
+        let start = 0;
+        const duration = 2000;
+        const step = target / (duration / 16);
+        const timer = setInterval(() => {
+          start += step;
+          if (start >= target) { el.textContent = target.toLocaleString('id'); clearInterval(timer); }
+          else el.textContent = Math.floor(start).toLocaleString('id');
+        }, 16);
+      });
+      statsObs.unobserve(e.target);
+    }
+  });
+}, { threshold: 0.3 });
+const statsEl = document.querySelector('.stats-grid');
+if (statsEl) statsObs.observe(statsEl);
+
+// ── KUTIPAN SLIDER ──
+const kutipan = [
+  { text: "Kebudayaan adalah jiwa sebuah bangsa. Jika jiwa itu hilang, hilang pulalah bangsa itu dari muka bumi.", src: "— Bung Karno, Presiden Pertama RI" },
+  { text: "Banggalah menjadi orang Indonesia. Bukan karena kita hebat, tapi karena kita kaya — kaya akan budaya, bahasa, dan saudara.", src: "— Ki Hajar Dewantara, Bapak Pendidikan" },
+  { text: "Budaya bukan sesuatu yang kita warisi dari nenek moyang. Ia adalah sesuatu yang kita pinjam dari anak cucu kita.", src: "— Pepatah Nusantara" }
+];
+let ktIdx = 0;
+function changeKutipan(i) {
+  ktIdx = i;
+  const txt = document.getElementById('kutipanText');
+  const src = document.getElementById('kutipanSource');
+  txt.style.opacity = 0; src.style.opacity = 0;
+  setTimeout(() => {
+    txt.textContent = kutipan[i].text;
+    src.textContent = kutipan[i].src;
+    txt.style.opacity = 1; src.style.opacity = 1;
+  }, 300);
+  document.querySelectorAll('.kutipan-dot').forEach((d,j) => d.classList.toggle('active', j===i));
+}
+document.getElementById('kutipanText').style.transition = 'opacity 0.3s';
+document.getElementById('kutipanSource').style.transition = 'opacity 0.3s';
+setInterval(() => changeKutipan((ktIdx + 1) % 3), 5000);
+
+// ── PETA ──
+const petaData = {
+  'Sumatera': { sub: 'Tanah Adat Batak, Minang, Melayu', facts: ['Rumah adat Gadang Minangkabau dengan atap tanduk khas','Tari Piring dan Tari Indang dari Sumatera Barat','Kain songket berbenang emas warisan melayu','Tradisi matrilineal Minangkabau, unik di dunia','Danau Toba, danau vulkanik terbesar di Asia'] },
+  'Jawa': { sub: 'Pusat Kebudayaan Jawa, Sunda, dan Betawi', facts: ['Wayang kulit dan keris, warisan UNESCO','Candi Borobudur dan Prambanan, mahakarya Hindu-Buddha','Batik Solo dan Yogyakarta berfilosofi mendalam','Upacara Sekaten dan Grebeg di Keraton','Tembang macapat dan sastra Jawa kuno'] },
+  'Kalimantan': { sub: 'Rumah Dayak dan kekayaan hutan tropis', facts: ['Rumah Panjang Dayak, tempat tinggal komunal','Mandau, senjata tradisional dan simbol keberanian','Tari Hudoq untuk ritual pertanian','Ukiran kayu Dayak dengan motif flora-fauna','Festival Erau di Kutai Kartanegara'] },
+  'Sulawesi': { sub: 'Toraja, Bugis, dan tradisi maritim', facts: ['Rambu Solo, upacara pemakaman Toraja yang unik','Perahu Pinisi Bugis, legenda pelaut Nusantara','Rumah Tongkonan dengan atap perahu khas Toraja','Tari Paddupa penyambutan tamu','Sarung sutera Bugis dengan motif khas'] },
+  'Bali & Nusa Tenggara': { sub: 'Hinduisme, tenun, dan tari sakral', facts: ['Tari Kecak dan Legong, ikon budaya dunia','Upacara Ngaben, kremasi suci Hindu Bali','Tenun ikat Sumba dan Flores yang sakral','Pura Besakih, Ibu Pura tertinggi di Bali','Festival Pasola di Sumba setiap Februari'] },
+  'Maluku': { sub: 'Rempah dunia dan nyanyian Cakalele', facts: ['Tari Cakalele, tarian perang Maluku yang gagah','Banda Naira, pusat rempah cengkeh dunia','Musik tifa dan totobuang khas Maluku','Tradisi Sasi untuk menjaga ekosistem laut','Benteng portugis saksi sejarah Nusantara'] },
+  'Papua': { sub: 'Koteka, Asmat, dan seni ukir primitif', facts: ['Seni ukir Asmat diakui dunia sebagai karya primitif','Festival Danau Sentani, pesta rakyat Papua','Noken, tas rajutan daun, warisan UNESCO Papua','Tari Yospan dan Jepen, simbol kegembiraan','Raja Ampat, surga bawah laut dan budaya Kepala Burung'] }
+};
+function activateIsland(el, name, sub) {
+  document.querySelectorAll('.island-chip').forEach(c => c.classList.remove('active'));
+  el.classList.add('active');
+  const d = petaData[name];
+  document.getElementById('petaTitle').textContent = name;
+  document.getElementById('petaSub').textContent = d.sub;
+  const facts = document.querySelector('.peta-facts');
+  facts.innerHTML = d.facts.map(f => `<li>${f}</li>`).join('');
+}
+
+// ── NEWSLETTER ──
+function handleSubscribe() {
+  const email = document.getElementById('emailInput').value;
+  const msg = document.getElementById('newsletterMsg');
+  if (!email || !email.includes('@')) {
+    msg.textContent = '⚠️ Mohon masukkan alamat email yang valid.';
+    msg.style.color = '#F87171';
+    return;
+  }
+  msg.textContent = '✅ Terima kasih! Anda telah bergabung dengan komunitas Nusantara.';
+  msg.style.color = '#4ADE80';
+  document.getElementById('emailInput').value = '';
+  setTimeout(() => {
+    msg.textContent = '🔒 Kami menghormati privasi Anda. Tidak ada spam.';
+    msg.style.color = '';
+  }, 4000);
+}
+document.getElementById('emailInput').addEventListener('keydown', e => {
+  if (e.key === 'Enter') handleSubscribe();
+});
+
+// ── SMOOTH SCROLL ──
+document.querySelectorAll('a[href^="#"]').forEach(a => {
+  a.addEventListener('click', e => {
+    const target = document.querySelector(a.getAttribute('href'));
+    if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
+  });
+});
+</script>
+</body>
+</html>
